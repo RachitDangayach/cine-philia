@@ -89,7 +89,7 @@ function TransitionsModal(props){
                                  className="ContentModal__landscape" />
                                 <div className="ContentModal__about">
                                     <span className="ContentModal__title">
-                                        {content.title || content.name} ({content.release_date? content.release_date.substring(0,4) : content.first_air_date.substring(0,4)})
+                                        {content.title || content.name} ({content.release_date? content.release_date.substring(0,4) : content.first_air_date? content.first_air_date.substring(0,4) : null})
                                     </span>
 
                                     {content.tagline && (
